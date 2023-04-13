@@ -9,13 +9,18 @@ public class Maven {
         //asks the user for input and outputs the user input
         System.out.println("Enter something: ");
         String userInput = input.nextLine();
-        System.out.println("You entered: " + userInput);
+        System.out.println("\nYou entered: " + userInput);
 
         //checks if its a number
         boolean numOrNot = StringUtils.isNumeric(userInput);
         String answerToNum = numOrNot ? "is a number" : "is not a number";
-        System.out.print(userInput + " " + answerToNum);
+        System.out.print("\n" + userInput + " " + answerToNum + "\n");
 
+        //flipped case
+        System.out.println("\nFlipped Case: " + StringUtils.swapCase(userInput));
+
+        //reversed
+        System.out.println("\nReversed: " + StringUtils.reverse(userInput));
 
     }
 }
